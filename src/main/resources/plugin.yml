@@ -4,7 +4,7 @@ version: "${project.version}"
 author: emanon
 api-version: 1.13
 folia-supported: true
-softdepend: [ Vault,SuperVanish,PremiumVanish,PlaceHolderAPI,ShopGUIPlus,ItemBridge,MythicMobs,IridiumSkyblock,ASkyBlock,uSkyBlock,IslandWorld,FabledSkyBlock,SimpleSkyblock,SkyBlock,SuperiorSkyblock2,SuperiorSkyblock ]
+softdepend: [ Vault,SuperVanish,PremiumVanish,PlaceHolderAPI,ShopGUIPlus,ItemBridge,MythicMobs,IridiumSkyblock,ASkyBlock,uSkyBlock,IslandWorld,FabledSkyBlock,SimpleSkyblock,SkyBlock,SuperiorSkyblock2,SuperiorSkyblock,RewardsInventory ]
 
 commands:
   itemedit:
@@ -92,6 +92,7 @@ permissions:
       itemedit.serveritem.buy: true
       itemedit.serveritem.sellmax: true
       itemedit.serveritem.buymax: true
+      itemedit.serveritem.additem: true
   itemedit.serveritem.save:
     default: op
     description: Allow to store items
@@ -128,6 +129,9 @@ permissions:
   itemedit.serveritem.buymax:
     default: op
     description: Allow to buy stored items
+  itemedit.serveritem.additem:
+    default: op
+    description: Allow to add items to a player's RewardInventory menu
   itemedit.itemstorage.*:
     default: op
     description: Gives full access to command /itemstorage

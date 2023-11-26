@@ -64,6 +64,10 @@ serveritem:
     name: "take"
     # Placeholders: %id% %nick% %amount% %player_name%
     log: "[serveritem][take] %player_name% gave %amount% of %id% (%nick%)"
+  additem:
+    name: "additem"
+    # Placeholders: %id% %nick% %amount% %player_name%
+    log: "[serveritem][additem] %player_name% obtained %amount% of %id% (%nick%)"
   save:
     name: "save"
   delete:

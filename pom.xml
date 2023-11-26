@@ -113,5 +113,12 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.12.13</version>
         </dependency>
+        <!-- RewardsInventory -->
+        <dependency>
+            <groupId>me.gavvydizzle</groupId>
+            <artifactId>RewardsInventory</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

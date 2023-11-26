@@ -31,6 +31,11 @@ public class ServerItemCommand extends AbstractCommand {
         } catch (NoClassDefFoundError | IllegalStateException e) {
             ItemEdit.get().log("Unable to hook into Vault");
         }
+        try {
+            this.registerSubCommand(new AddItem(this));
+        } catch (Exception e) {
+            ItemEdit.get().log("Unable to hook into RewardsInventory");
+        }
     }
 
 }
